@@ -1,12 +1,22 @@
-body {
-    background-color: #130f40;
+:root {
+    --sun-dia: 175px;
+    --glow-size: 30px;
+    --glow-color: rgba(255, 242, 0, 0.7);
 }
+
+body {
+    background-color: #080617;
+    overflow: hidden;
+}
+
 .sun {
-    background-color: #fff200;
-    width: 695px;
-    height: 695px;
+    background-color: rgb(255, 242, 0);
+    width: var(--sun-dia);
+    height: var(--sun-dia);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    border-radius: 1000px;
+    box-shadow: 0 0 var(--glow-size) var(--glow-color);
 }
